@@ -4,6 +4,7 @@ import pandas as pd
 import warnings
 warnings.filterwarnings('ignore')
 
+#To maximize column width of pandas output
 pd.set_option('display.max_colwidth', -1)
 
 
@@ -52,7 +53,9 @@ def replace_none(list_):
     return list_
 
 
-def enrollment_count(list_):
+def enrollment_count(total_enrollments):
+    #Converting string elements into numerical counts
+    
     k = 1000
     m = 10e+6
 
@@ -67,6 +70,7 @@ def enrollment_count(list_):
     return total_enrollments
 
 
+#Saving our data to DataFrame, it will be easier to query searches
 def saveDataframe():
     df = pd.DataFrame({
         'courses' : courses,
@@ -81,6 +85,7 @@ def saveDataframe():
     return df
 
 
+#quering required choices
 class Query:
     def __init__(self):
         pass
