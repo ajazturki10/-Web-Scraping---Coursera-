@@ -4,7 +4,9 @@
  This project queries the given subject and displays the top 'k' courses based on selected criteria(difficulty, type of certifications, ratings, popularity.
  
  Techniques : Web Scraping, Object Oriented Programming
+ 
  Tools: BeautifulSoup, Requests, Pandas
+ 
  URL : https://www.coursera.org/courses?query=
 
 
